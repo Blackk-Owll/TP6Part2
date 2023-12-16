@@ -70,6 +70,7 @@ public class MatrixMathematics {
 		return mat;
 	}
 	
+
 	/**
 	 * The cofactor of a matrix
 	 * @param matrix
@@ -87,7 +88,7 @@ public class MatrixMathematics {
 		return mat;
 	}
 
-	
+
 
 	/**
 	 * Transpose of a matrix - Swap the columns with rows
@@ -106,6 +107,7 @@ public class MatrixMathematics {
 
 
 
+
 	/**
 	 * Inverse of a matrix - A-1 * A = I where I is the identity matrix
 	 * A matrix that have inverse is called non-singular or invertible. If the matrix does not have inverse it is called singular.
@@ -120,6 +122,7 @@ public class MatrixMathematics {
 		if(det==0) {
 			return null;
 		}
+
 
 		return (transpose(cofactor(matrix)).multiplyByConstant(1.0/det));
 		
